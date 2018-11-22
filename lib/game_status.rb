@@ -15,6 +15,12 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  all_empty = board.all? do |position|
+    position = " "
+  end
+  if all_empty
+    return false
+  end
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
