@@ -19,7 +19,7 @@ def won?(board)
     position = " "
   end
   if all_empty
-    return false
+    false
   end
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
