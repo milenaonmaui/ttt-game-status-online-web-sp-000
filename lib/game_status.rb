@@ -24,11 +24,11 @@ def won?(board)
     position_2 = board[win_index_2] # load the value of the board at win_index_2
     position_3 = board[win_index_3]
     if !position_taken(board, win_index_1)
-      false
-    elsif position_1 == position_2 && position_2== position_3
+      return false
+    elsif position_1 == position_2 && position_2 == position_3
       return win_combination # return the win_combination indexes that won.
     else
-      false
+      return false
     end
   end
 end
