@@ -63,7 +63,10 @@ def over?(board)
 end
 
 def winner(board)
-  #win_row = won?(board)
-  #if !win_row
-    return board[won?(board)[0]]
+  win_row = won?(board)
+  if !win_row
+    return board[win_row[0]]
+  else
+    nil
+  end
 end
