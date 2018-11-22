@@ -35,3 +35,10 @@ def won?(board)
   end
   false
 end
+
+def full?(board)
+  all_full = board.all? do |position|
+    position != " "
+  end
+  all_full
+end
